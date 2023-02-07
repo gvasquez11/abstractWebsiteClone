@@ -24,15 +24,165 @@ html {
     font-size: 62.5%
 }
 
-body {}
+body {
+    margin: 0;
+}
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+header{
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    height: 95px;
+    
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+#helpCenter:hover{
+    text-decoration: underline;
+}
+
+header, .leftHeader, .rightSide{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+header{
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.blackButton, .blueButton{
+    height: 55px;
+    border-radius: 15px;
+    width: 220px;
+    font-size: 22px;
+    background-color: rgb(24, 23, 23);
+    color: white;
+    border: 1px solid white;
+
+}
+
+.blueButton{
+    width: 150px;
+    background: #4C5FD5;
+    
+}
+
+.blueButton:hover, .blackButton:hover{
+    cursor: pointer;
+}
+
+.blueButton:hover{
+    background-color: white;
+    color: black;
+}
+
+.blueSection{
+    font-size: 50px;
+    text-align: center;
+    background-color: #dadbf1;
+    padding: 125px;
+}
+
+h1{
+    margin: 0;
+}
+
+.blueSection input{
+    height: 60px;
+    width: 60%;
+}
+
+.blueSection input::placeholder
+{
+    font-size: 200%;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 15%;
+}
+
+.categoryItem{
+    display: flex;
+    align-items: center;
+    font-size: 180%;
+    flex-basis: 50%;
+    
+}
+
+.category-list-svg-icon{
+    height: 35%;
+}
+
+.subRight{
+    padding-left: 20px;
+}
+
+.subRight a{
+    color: #4C5FD5;
+    text-decoration: none;
+}
+
+.subRight a:hover{
+    text-decoration: underline;
+}
 
 
+footer{
+    height: 400px;
+    background-color: black;
+    color: white;
+    font-size: 200%;
+    display: flex;
+    justify-content: space-evenly;
+}
 
+footer a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+footer a:hover, #emailContact{
+    text-decoration: underline;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li{
+    padding: 2px 0;
+}
+
+.footSubRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;  
+    margin-bottom: 3%;
+}
+.footSubRight svg{
+    margin-bottom: 15px;
+}
+
+.footSubRight p{
+    margin: 0;
+    padding: 3px 0;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
