@@ -115,12 +115,14 @@ main{
     margin: 0 15%;
 }
 
+main h2{
+    margin-top: 0;
+}
 .categoryItem{
     display: flex;
     align-items: center;
     font-size: 180%;
     flex-basis: 50%;
-    
 }
 
 .category-list-svg-icon{
@@ -129,6 +131,7 @@ main{
 
 .subRight{
     padding-left: 20px;
+    flex-basis: 100%;
 }
 
 .subRight a{
